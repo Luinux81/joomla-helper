@@ -1,0 +1,16 @@
+{
+    "name": "lbcdev/joomla-helper",
+    "description": "Utility functions for Joomla templates, modules and plugins development",
+    "autoload": {
+        "psr-4": {
+            "LBCdev\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Luis BC",
+            "email": "luinux81@gmail.com"
+        }
+    ],
+    "require": {}
+}
