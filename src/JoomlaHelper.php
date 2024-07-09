@@ -109,6 +109,11 @@ class JoomlaHelper{
 
         return $res;
     }
+
+    public static function test()
+    {
+        return "Esto es una prueba!";
+    }
 }
 
 ?>
