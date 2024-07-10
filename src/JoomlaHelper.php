@@ -110,6 +110,12 @@ class JoomlaHelper{
         return $res;
     }
 
+    public static function isCurrentViewHome(&$app){
+        $menu = $app->getMenu();
+        $lang = $app->getLanguage();
+
+        return $menu->getActive() == $menu->getDefault($lang->getTag());
+    }
     public static function test()
     {
         return "Esto es una prueba!";
