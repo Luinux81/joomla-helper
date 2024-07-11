@@ -110,16 +110,19 @@ class JoomlaHelper{
         return $res;
     }
 
+    /**
+     * Determina si la vista actual es la página home del lenguaje actual
+     *
+     * @param [type] $app
+     * @return boolean True si la vista actual es la página home, falso en caso contrario.
+     */
     public static function isCurrentViewHome(&$app){
         $menu = $app->getMenu();
         $lang = $app->getLanguage();
 
         return $menu->getActive() == $menu->getDefault($lang->getTag());
     }
-    public static function test()
-    {
-        return "Esto es una prueba!";
-    }
+
 }
 
 ?>
